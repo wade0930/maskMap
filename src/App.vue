@@ -21,10 +21,10 @@
               <select id="area" class="form-control" v-if="select.city.length"
                 v-model="select.area" @change="updateSelect">
                 <option value="">-- Select One --</option>
-                <option :value="a.AreaName"
-                  v-for="a in cityName.find((city) => city.CityName === select.city).AreaList"
-                  :key="a.AreaName">
-                  {{ a.AreaName }}
+                <option :value="c.AreaName"
+                  v-for="c in cityName.find((city) => city.CityName === select.city).AreaList"
+                  :key="c.AreaName">
+                  {{ c.AreaName }}
                 </option>
               </select>
             </div>
