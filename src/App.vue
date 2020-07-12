@@ -160,8 +160,8 @@ export default {
   mounted() {
     // OSM
     osmMap = L.map('map', {
-      center: [25.03, 121.55],
-      zoom: 15,
+      center: [25.03, 121.55],//臺北市經緯度
+      zoom: 15,//縮放
     });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
